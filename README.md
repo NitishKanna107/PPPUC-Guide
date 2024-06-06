@@ -16,6 +16,9 @@ I made it a routine to first solve the exercise on my own and then compare the s
 ## Compilers and IDE
 I personally prefer Visual Studio as it is a comprehensive IDE and has all tools built into it. If you want to find a good place to start then Visual Studio is not a bad choice but I would recommend that you also experiment with others until you feel comfortable with one.
 
+The header files used such as std_lib_facilities.h can found here:
+- https://github.com/BjarneStroustrup/Programming-_Principles_and_Practice_Using_Cpp
+
 List of IDE and compilers you can start with:
 - Visual Studio (https://visualstudio.microsoft.com/)
 - Dev C++ (https://www.bloodshed.net/)
