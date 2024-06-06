@@ -1,2 +1,2 @@
-# PPPUC-Guide
-Exercise and Drill Solutions to Programming Principles and Practices Using C++ (2nd Edition)
+# Programming Principles and Practices Using C++ - Bjarne Stroustrap
+This repository contains my solutions to the exercises and drills in the book PPPUC++.
