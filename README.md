@@ -13,7 +13,7 @@ I made it a routine to first solve the exercise on my own and then compare the s
 
 > I couldn't properly organize the solutions for Chapters 1-7 as I created this repository only after I had gone through them. Sorry for the inconvenience but I have listed alternate resources at the end.
 
-# Compilers and IDE
+## Compilers and IDE
 I personally prefer Visual Studio as it is a comprehensive IDE and has all tools built into it. If you want to find a good place to start then Visual Studio is not a bad choice but I would recommend that you also experiment with others until you feel comfortable with one.
 
 List of IDE and compilers you can start with:
