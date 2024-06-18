@@ -46,29 +46,27 @@ void printr(const result& rlt, const vector<double>& nums, const std::string& la
 	std::cout << "}" << '\n';
 }
 
-result compute(const vector<double>& val)
+result compute(vector<double> val) // copy vector as we will sort it
 {
 	if (val.size() == 0) error("!Empty vector");
+	std::sort(val.begin(), val.end()); // sort to find median, smallest, largest
 
 	result r;
-	r.largest = r.smallest = val[0]; // Initially, smallest and largest are given the value of the first element
+	r.largest = val.back();
+	r.smallest = val.front();
 
 	for (double x : val) {
-		if (x > r.largest) r.largest = x;
-		if (x < r.smallest) r.smallest = x;
 		r.mean += x;
 	}
 	r.mean /= val.size();
 
-	vector<double> val_sorted = val; // we need a sorted vector to find the median
-	std::sort(val_sorted.begin(), val_sorted.end());
 	int index = val.size() / 2; // index of the middle element
 
 	if (val.size() % 2 != 0) {
-		r.median = val_sorted[index];
+		r.median = val[index];
 	}
 	else {
-		r.median = (val_sorted[index] + val_sorted[index - 1]) / 2.0; // average of the two middle elements
+		r.median = (val[index] + val[index - 1]) / 2.0; // average of the two middle elements
 	}
 	return r;
 }
@@ -80,7 +78,7 @@ int main()
 		result computed1 = compute(nums1);
 		printr(computed1, nums1, "test_case1");
 
-		vector<double> nums2 = { 1.5 };
+		vector<double> nums2 = { 1.5, 5.6, 3 };
 		result computed2 = compute(nums2);
 		printr(computed2, nums2, "test_case2");
 		
